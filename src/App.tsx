@@ -37,8 +37,8 @@ function App() {
   return (
     <main className="flex flex-col min-h-screen w-full items-center justify-center gap-4 bg-black text-white">
       <div className='flex sm:flex-row flex-col sm:gap-8 gap-4 text-center'>
-        <h1 className='font-sf-mono sm:text-8xl text-6xl tracking-[20%]'>DEEP</h1>
-        <h1 className='font-sf-mono sm:text-8xl text-6xl tracking-[20%]'>SPACE</h1>
+        <h1 className='font-sf-mono sm:text-8xl text-6xl tracking-[1rem]'>DEEP</h1>
+        <h1 className='font-sf-mono sm:text-8xl text-6xl tracking-[1rem]'>SPACE</h1>
       </div>
       <h4 className='font-sf-mono sm:text-3xl text-md mb-12'>Mini App Hackathon by Orbiter</h4>
       {context ? (
