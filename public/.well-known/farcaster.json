@@ -1,0 +1,18 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjYwMjMsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg0NTYxMzExNjFmODNDN0Q3ZkRBMTViMzJhNWY3QzIxRkQ0RTI3RTk2In0",
+    "payload": "eyJkb21haW4iOiJkZWVwc3BhY2Uub3JiaXRlci5ob3N0In0",
+    "signature": "MHg3ZTRhYzRhNzZiYzM4NGEzYTBkZDdhN2NlOGFhZTJlN2NiM2MwNjRkZDdiNDIyNmE3YTdiMjFlMzQ3MzEwYTA2MmFjMDcyMDY5MDJhMGQyMzM0YmYzMDIzMmUxNGU5YjBkOTllMWM4NWIyNWU1MzczZDU2NGQ3N2NlMmUzOTE0MTFj"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Deep Space",
+    "iconUrl": "https://deepspace.orbiter.host/icon.png",
+    "homeUrl": "https://deepspace.orbiter.host",
+    "imageUrl": "https://deepspace.orbiter.host/image.png",
+    "buttonTitle": "Launch",
+    "splashImageUrl": "https://deepspace.orbiter.host/splash.png",
+    "splashBackgroundColor": "#000000",
+    "webhookUrl": "https://webhooks.pingem.xyz/f/3bdbu"
+  }
+}

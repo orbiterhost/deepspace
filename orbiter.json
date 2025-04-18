@@ -1,0 +1,6 @@
+{
+  "siteId": "11e36032-b5d4-42b8-8ed3-9e07fd7c1e77",
+  "domain": "deepspace",
+  "buildCommand": "bun run build",
+  "buildDir": "dist"
+}
