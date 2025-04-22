@@ -3,6 +3,7 @@ import sdk from '@farcaster/frame-sdk';
 import { Context } from '@farcaster/frame-sdk';
 import { Button } from '@/components/ui/button';
 import { Link as RouterLink } from "react-router-dom";
+import { Link } from "@mini_apps/utilities"
 import { toast } from "sonner"
 
 function Home() {
@@ -85,6 +86,10 @@ function Home() {
           </Button>
         </div>
       )}
+      <h4 className='flex flex-row items-center gap-3 mt-8'>
+        Sponsored by
+        <Link className='font-bold text-lg' href="https://pingem.xyz">Ping'em</Link>
+      </h4>
     </main>
   )
 }
