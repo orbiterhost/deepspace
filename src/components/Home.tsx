@@ -83,7 +83,6 @@ function Home() {
           <Button asChild variant='secondary'>
             <RouterLink to="/rules">Rules</RouterLink>
           </Button>
-
         </div>
       )}
     </main>

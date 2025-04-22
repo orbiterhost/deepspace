@@ -13,6 +13,7 @@ function Rules() {
         <li>Project must have a GitHub repo with a history of building the project out</li>
         <li>Project must be hosted on Orbiter</li>
         <li>Project must have Farcaster account association</li>
+        <li>Projects will be submitted through the Deep Space Mini App</li>
       </ul>
       <div className='flex flex-col gap-8'>
         <Button asChild variant='secondary'>
