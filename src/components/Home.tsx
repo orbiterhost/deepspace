@@ -1,39 +1,24 @@
-import { useState, useEffect } from 'react'
-import sdk from '@farcaster/frame-sdk';
 import { Context } from '@farcaster/frame-sdk';
 import { Button } from '@/components/ui/button';
 import { Link as RouterLink } from "react-router-dom";
 import { Link } from "@mini_apps/utilities"
 import { toast } from "sonner"
+import { FrameSDK } from '@farcaster/frame-sdk/dist/types';
 
-function Home() {
-  const [isSDKLoaded, setIsSDKLoaded] = useState(false);
-  const [context, setContext] = useState<Context.FrameContext>();
-
-  useEffect(() => {
-    const load = async () => {
-      setContext(await sdk.context);
-      sdk.actions.ready();
-    };
-    if (sdk && !isSDKLoaded) {
-      setIsSDKLoaded(true);
-      load();
-    }
-  }, [isSDKLoaded]);
+function Home({ sdk, context }: { sdk: FrameSDK, context: Context.FrameContext | undefined }) {
 
   async function addFrame() {
     try {
       await sdk.actions.addFrame()
       toast("Subscribed for future notifcations!")
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.log(error)
-      toast(error.message.toString())
+      if (error instanceof Error) {
+        toast(error.message)
+      } else {
+        toast("An unknown error occurred")
+      }
     }
-  }
-
-
-  if (!isSDKLoaded) {
-    return <div className="bg-black text-white">Loading...</div>;
   }
 
   return (

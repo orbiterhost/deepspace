@@ -24,14 +24,14 @@ function App() {
   }, [isSDKLoaded, context]);
 
   if (!isSDKLoaded) {
-    return <div>Loading...</div>;
+    return <div className="bg-black text-white min-h-screen w-full flex flex-col items-center justify-center">Loading...</div>;
   }
 
   return (
     <BrowserRouter>
       <div className='min-h-screen w-full flex flex-col items-center justify-start bg-background'>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home context={context} sdk={sdk} />} />
           <Route path="/rules" element={<Rules />} />
         </Routes>
       </div>
