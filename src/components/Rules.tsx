@@ -9,7 +9,7 @@ function Rules() {
         <h1 className='font-sf-mono sm:text-8xl text-6xl tracking-[1rem]'>RULES</h1>
       </div>
       <ul className='pl-4 list-disc m-12 space-y-4'>
-        <li>Project must be started after 04/28/25, cannot be a previous app</li>
+        <li>Project cannot be started before April 28, 2025</li>
         <li>Project must have a GitHub repo with a history of building the project out</li>
         <li>Project must be hosted on Orbiter</li>
         <li>Project must have Farcaster account association</li>
