@@ -5,6 +5,8 @@ import Rules from './components/Rules';
 import sdk from '@farcaster/frame-sdk';
 import { Context } from '@farcaster/frame-sdk';
 import Prizes from './components/Prizes';
+import Submit from './components/Submit';
+import Submissions from './components/Submissions';
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
           <Route path="/" element={<Home context={context} sdk={sdk} />} />
           <Route path="/rules" element={<Rules />} />
           <Route path="/prizes" element={<Prizes />} />
+          <Route path="/submit" element={<Submit context={context} />} />
+          <Route path="/submissions" element={<Submissions />} />
         </Routes>
       </div>
     </BrowserRouter>

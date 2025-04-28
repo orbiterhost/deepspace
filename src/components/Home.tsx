@@ -47,6 +47,9 @@ function Home({ sdk, context }: { sdk: FrameSDK, context: Context.FrameContext |
           <Button asChild variant='secondary'>
             <RouterLink to="/prizes">Prizes</RouterLink>
           </Button>
+          <Button asChild variant='secondary'>
+            <RouterLink to="/submit">Submit</RouterLink>
+          </Button>
         </div>
       ) : (
         <div className='flex flex-col gap-8'>
@@ -73,6 +76,9 @@ function Home({ sdk, context }: { sdk: FrameSDK, context: Context.FrameContext |
           </Button>
           <Button asChild variant='secondary'>
             <RouterLink to="/prizes">Prizes</RouterLink>
+          </Button>
+          <Button asChild variant='secondary'>
+            <RouterLink to="/submit">Submit</RouterLink>
           </Button>
         </div>
       )}
