@@ -15,6 +15,7 @@ const formSchema = z.object({
   castUrl: z.string().url({ message: "Please enter a valid Farcaster Cast URL" }),
   githubUrl: z.string().url({ message: "Please enter a valid GitHub repository URL" }),
   miniAppUrl: z.string().url({ message: "Please enter a valid Mini App URL" }),
+  username: z.string()
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -29,6 +30,7 @@ function Submit({ context }: { context: Context.FrameContext | undefined }) {
       castUrl: '',
       githubUrl: '',
       miniAppUrl: '',
+      username: ''
     },
   });
 
@@ -41,9 +43,10 @@ function Submit({ context }: { context: Context.FrameContext | undefined }) {
         fid: context?.user.fid,
         castUrl: values.castUrl,
         githubUrl: values.githubUrl,
-        miniAppUrl: values.miniAppUrl
+        miniAppUrl: values.miniAppUrl,
+        username: context?.user.username
       })
-      const req = await fetch(`${import.meta.env.VITE_SERVER_URL}`, {
+      const req = await fetch(`${import.meta.env.VITE_SERVER_URL}/submit`, {
         method: 'POST',
         body: data
       });
